@@ -19,7 +19,7 @@ const Technologies = () =>  (
           <ListParagraph>
             Experience with: <br />
             React.js.<br />
-            Node.js.<br />
+            Next.js.<br />
             HTML <br />
             CSS <br />
             Bootstrap <br />
