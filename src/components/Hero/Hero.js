@@ -14,7 +14,7 @@ const Hero = () => (
       <SectionText>
         Enthusiastic web dev with over 1 year of Front-End experience
       </SectionText>
-      <Button onClick={() => window.location= "https://google.com"}>
+      <Button onClick={() => window.location= "#"}>
         Learn More
       </Button>
     </LeftSection>
