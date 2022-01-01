@@ -9,7 +9,7 @@ const Technologies = () =>  (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      Over 1 year of experience working on personal projects,developing UI/UX designs using Front-End
+      1 year of experience working on personal projects,developing UI/UX designs using Front-End
     </SectionText>
     <List>
       <ListItem>
