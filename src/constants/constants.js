@@ -30,7 +30,7 @@ export const projects = [
     title: 'Video chat app',
     description: "This is a website built with Agora for video meetings with poll features as well as screen sharing features",
     tags: ['React', 'TypeScript', 'AgoraBuilder'],
-    image: '/images/11.jpg',
+    image: '/images/10.png',
     source: 'https://courtroom.netlify.app/create',
     visit: 'https://github.com/Billioma/videochat',
     id: 3,
