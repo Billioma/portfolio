@@ -25,19 +25,17 @@ export const projects = [
     source: 'https://chop-restaurant.netlify.app/',
     visit: 'https://github.com/Billioma/restaurant__website',
     id: 2,
-    }
-];
-  /*{
-    title: 'Unichat',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    },
+  {
+    title: 'Video chat app',
+    description: "This is a website built with Agora for video meetings with poll features as well as screen sharing features",
+    tags: ['React', 'TypeScript', 'AgoraBuilder'],
+    image: '/images/10.png',
+    source: 'https://courtroom.netlify.app/create',
+    visit: 'https://github.com/Billioma/videochat',
     id: 3,
   },
 ];
-*/
 
 export const TimeLineData = [
   /*{ year: 2017, text: 'Started my journey', },
