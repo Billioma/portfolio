@@ -48,7 +48,7 @@ export const projects = [
     title: 'Hospital website',
     description: "A demo website for a clinic, allowing clients to glance through a landing page and an appointment booking page",
     tags: ['HTML', 'CSS', 'Vanilla JS'],
-    image: '/images/2.png',
+    image: '/images/2.jpg',
     source: 'https://ancilla-hospital.netlify.app/',
     visit: 'https://github.com/Billioma/hospital',
     id: 5,
