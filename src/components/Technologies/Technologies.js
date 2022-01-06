@@ -24,7 +24,7 @@ const Technologies = () =>  (
             CSS <br />
             Bootstrap <br />
             Tailwind CSS<br />
-
+            Experience with tools like Figma<br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -43,8 +43,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>UI/UXEnd</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            
           </ListParagraph>
         </ListContainer>
       </ListItem>*/}
