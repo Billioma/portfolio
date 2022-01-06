@@ -35,6 +35,15 @@ export const projects = [
     visit: 'https://github.com/Billioma/videochat',
     id: 3,
   },
+   {
+    title: 'Real estate website',
+    description: "Developed using Rapid API. This is a demo website where clients can take a peep at what may interest them and proceed with purchases",
+    tags: ['React', 'Nextjs', 'chakra-ui'],
+    image: '/images/1.jpg',
+    source: 'https://oma-realestate.vercel.app',
+    visit: 'https://github.com/Billioma/oma_realestate',
+    id: 4,
+  },
 ];
 
 export const TimeLineData = [
