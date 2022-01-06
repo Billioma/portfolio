@@ -44,6 +44,15 @@ export const projects = [
     visit: 'https://github.com/Billioma/oma_realestate',
     id: 4,
   },
+  {
+    title: 'Hospital website',
+    description: "A demo website for a clinic, allowing clients to glance through a landing page and an appointment booking page",
+    tags: ['HTML', 'CSS', 'Vanilla JS'],
+    image: '/images/2.png',
+    source: 'https://ancilla-hospital.netlify.app/',
+    visit: 'https://github.com/Billioma/hospital',
+    id: 5,
+  },
 ];
 
 export const TimeLineData = [
