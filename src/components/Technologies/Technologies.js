@@ -20,6 +20,7 @@ const Technologies = () =>  (
             Experience with: <br />
             React.js.<br />
             Next.js.<br />
+            TypeScript <br />
             HTML <br />
             CSS <br />
             Bootstrap <br />
