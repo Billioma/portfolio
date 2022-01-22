@@ -12,7 +12,7 @@ const Hero = () => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        Enthusiastic web dev with 2 years of Front-End experience
+        Enthusiastic web dev with 3 years of Front-End experience
       </SectionText>
     </LeftSection>
   </section>
