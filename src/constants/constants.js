@@ -66,7 +66,7 @@ export const projects = [
     title: 'restaurant UI',
     description: "Landing page for a restaurant.",
     tags: ['React', 'CSS'],
-    image: '/images/4.png',
+    image: '/images/6.png',
     source: 'restaurant-page-ui.vercel.app/',
     visit: 'https://github.com/Billioma/restaurant-UI',
     id: 7,
