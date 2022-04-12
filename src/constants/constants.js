@@ -53,6 +53,24 @@ export const projects = [
     visit: 'https://github.com/Billioma/hospital',
     id: 5,
   },
+   {
+    title: 'Task tracker',
+    description: "Keep track of individual tasks, prioritize, and accomplish what’s most important.",
+    tags: ['TypeScript'],
+    image: '/images/3.png',
+    source: 'task-tracker-indol.vercel.app/',
+    visit: 'https://github.com/Billioma/task-tracker',
+    id: 6,
+  },
+   {
+    title: 'restaurant UI',
+    description: "Landing page for a restaurant.",
+    tags: ['React', 'CSS'],
+    image: '/images/4.png',
+    source: 'restaurant-page-ui.vercel.app/',
+    visit: 'https://github.com/Billioma/restaurant-UI',
+    id: 7,
+  },
 ];
 
 export const TimeLineData = [
