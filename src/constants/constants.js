@@ -63,7 +63,7 @@ export const projects = [
     id: 6,
   },
    {
-    title: 'restaurant landing page',
+    title: 'Restaurant landing page',
     description: "Landing page for a restaurant.",
     tags: ['React', 'CSS'],
     image: '/images/6.png',
