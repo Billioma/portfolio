@@ -1,12 +1,5 @@
-"use client"
-import {
-  Briefcase,
-  ChevronDown,
-  ExternalLink,
-  Mail,
-  Rocket,
-  Sparkles,
-} from "lucide-react";
+"use client";
+import { Briefcase, ChevronDown, Terminal, Mail, Binary } from "lucide-react";
 import { stat } from "../../../../components/constants";
 import { GlassCard, scrollToSection } from "@/components/Elements";
 
@@ -14,139 +7,133 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center px-6 pt-32"
+      className="min-h-screen flex items-center justify-center px-6 pt-32 font-mono selection:bg-emerald-500/30"
     >
-      <div className="text-center max-w-6xl">
-        <div className="relative mb-12">
-          <div className="w-48 h-48 mx-auto relative">
-            <div
-              className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 rounded-full opacity-60 animate-spin"
-              style={{ animation: "spin 8s linear infinite" }}
-            />
-            <div
-              className="absolute inset-2 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 rounded-full opacity-40 animate-spin"
-              style={{ animation: "spin 10s linear infinite reverse" }}
-            />
-            <div className="absolute inset-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-pulse" />
+      <div className="text-center max-w-6xl w-full">
+        <div className="relative mb-8">
+          <div className="w-32 h-32 mx-auto relative group">
+            <div className="absolute inset-0 bg-emerald-500/20 blur-3xl rounded-full group-hover:bg-emerald-500/40 transition-all duration-700" />
 
-            <GlassCard className="absolute inset-8 rounded-full flex items-center justify-center border-white/[0.1] backdrop-blur-2xl">
-              <span className="text-4xl font-black bg-gradient-to-r from-cyan-300 to-purple-400 bg-clip-text text-transparent">
-                BO
-              </span>
+            <div className="absolute inset-0 border border-emerald-500/30 rounded-xl rotate-45 animate-[spin_10s_linear_infinite]" />
+            <div className="absolute inset-0 border border-cyan-500/30 rounded-xl -rotate-12 animate-[spin_15s_linear_infinite_reverse]" />
+
+            <GlassCard className="absolute inset-0 rounded-xl flex items-center justify-center border-emerald-500/20 bg-[#0a0a0a]/80 backdrop-blur-2xl">
+              <Terminal className="text-emerald-500" size={40} />
             </GlassCard>
-
-            <div
-              className="absolute -top-4 -right-4 w-3 h-3 bg-cyan-400 rounded-full animate-bounce"
-              style={{ animationDelay: "0.3s" }}
-            />
-            <div
-              className="absolute -bottom-4 -left-4 w-2 h-2 bg-purple-400 rounded-full animate-bounce"
-              style={{ animationDelay: "0.7s" }}
-            />
           </div>
         </div>
 
-        <h1 className="text-7xl md:text-9xl font-black mb-8 tracking-tight">
-          <span className="bg-gradient-to-r from-white via-cyan-200 to-white bg-clip-text text-transparent">
-            Bilal
+        <div className="mb-4 inline-block">
+          <span className="text-emerald-500 text-lg md:text-xl font-bold italic">
+            const
           </span>
-          <br />
-          <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-pink-500 bg-clip-text text-transparent">
-            Omari
+          <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white inline-block ml-4">
+            BilalOmari
+          </h1>
+          <span className="text-gray-500 text-5xl md:text-7xl font-light">
+            {" "}
+            ={" "}
           </span>
-        </h1>
-
-        <div className="mb-10">
-          <GlassCard className="inline-block px-8 py-4 border-white/[0.1]">
-            <h2 className="text-2xl md:text-3xl font-light text-gray-300">
-              Senior Frontend Developer
-            </h2>
-            <div className="flex items-center justify-center space-x-3 mt-2">
-              <Sparkles className="text-cyan-400" size={20} />
-              <span className="text-lg text-cyan-300 font-medium">
-                Engineering Lead & Team Leader
-              </span>
-              <Rocket className="text-purple-400" size={20} />
-            </div>
-          </GlassCard>
+          <span className="text-cyan-400 text-3xl md:text-5xl font-semibold">
+            {"{"}
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-          {stat.map(({ value, label, Icon, border, iconColor, valueColor }) => (
-            <GlassCard
+        <div className="mb-10">
+          <div className="inline-flex items-center space-x-3 text-emerald-400/80 bg-emerald-500/5 px-4 py-1 rounded-full border border-emerald-500/10 mb-4">
+            <Binary size={16} />
+            <span className="text-xs uppercase tracking-[0.2em]">
+              Engineering_Lead.exe
+            </span>
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-300 block italic">
+            "Lead Frontend Architect"
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
+          {stat.map(({ value, label, Icon, valueColor }) => (
+            <div
               key={label}
-              className={`p-6 group hover:scale-105 ${border} transition-transform duration-300`}
+              className="relative p-6 bg-white/2 border border-white/5 rounded-sm group hover:border-emerald-500/40 transition-all duration-300"
             >
-              <div className="flex items-center justify-center space-x-3 mb-3">
+              <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-emerald-500/50" />
+              <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-emerald-500/50" />
+
+              <div className="flex flex-col items-center">
                 <Icon
-                  className={`${iconColor} transition-transform duration-500 group-hover:rotate-12`}
-                  size={24}
+                  className="text-gray-500 mb-2 group-hover:text-emerald-400 transition-colors"
+                  size={20}
                 />
-                <div className={`text-3xl font-bold ${valueColor}`}>
+                <div
+                  className={`text-4xl font-black tracking-tighter ${valueColor || "text-white"}`}
+                >
                   {value}
                 </div>
+                <div className="text-[10px] uppercase tracking-widest text-gray-500 mt-2 font-bold">
+                  {label}
+                </div>
               </div>
-              <div className="text-gray-400">{label}</div>
-            </GlassCard>
+            </div>
           ))}
         </div>
 
-        <GlassCard className="p-10 mb-12 max-w-4xl mx-auto border-white/[0.08]">
-          <p className="text-xl text-gray-300 leading-relaxed mb-6">
-            Crafting exceptional digital experiences with{" "}
-            <span className="text-cyan-300 font-semibold">React</span>,
-            <span className="text-blue-300 font-semibold"> TypeScript</span>,
-            <span className="text-purple-300 font-semibold"> Next JS</span>,
-            and cutting-edge frontend technologies. Passionate about building
-            scalable, user-centric applications that drive measurable business
-            growth.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {["React", "TypeScript", "Next.js", "Leadership", "Agile"].map(
-              (skill, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 bg-white/[0.03] border border-white/[0.08] rounded-full text-sm text-gray-400 backdrop-blur-xl hover:text-cyan-300 transition-colors"
-                >
-                  {skill}
-                </span>
-              ),
-            )}
+        <GlassCard className="p-1 text-left mb-12 max-w-4xl mx-auto border-white/8 overflow-hidden rounded-md">
+          <div className="bg-white/5 px-4 py-2 flex items-center gap-2 border-b border-white/5">
+            <div className="w-3 h-3 rounded-full bg-red-500/50" />
+            <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
+            <div className="w-3 h-3 rounded-full bg-green-500/50" />
+            <span className="text-[10px] text-gray-500 ml-2 font-bold">
+              bash — 80x24
+            </span>
+          </div>
+          <div className="p-8">
+            <p className="text-lg text-gray-400 leading-relaxed font-mono">
+              <span className="text-emerald-500 font-bold">{">"} </span>
+              Crafting high-stakes digital infrastructure using
+              <span className="text-white"> React.js</span>,
+              <span className="text-white"> TypeScript</span>, and
+              <span className="text-white"> Next.js</span>. Focused on scalable
+              architecture, fintech liquidity, and
+              <span className="text-cyan-400 underline underline-offset-4 decoration-cyan-400/30">
+                {" "}
+                performance optimization
+              </span>
+              .
+            </p>
           </div>
         </GlassCard>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
           <button
             onClick={() => scrollToSection("contact")}
-            className="group relative px-10 py-5 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1"
+            className="group flex items-center justify-center space-x-3 px-8 py-4 bg-emerald-500 text-black font-bold rounded-sm hover:bg-emerald-400 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.2)]"
           >
-            <span className="relative z-10 flex items-center justify-center space-x-3">
-              <Mail size={22} />
-              <span>Let's Connect</span>
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Mail size={18} />
+            <span>EXECUTE_CONTACT</span>
           </button>
 
           <button
-            onClick={() => scrollToSection("projects")}
-            className="group px-10 py-5 border-2 border-white/[0.1] text-white rounded-2xl font-semibold text-lg backdrop-blur-2xl hover:bg-white/[0.05] hover:border-cyan-400/50 transition-all duration-500 flex items-center justify-center space-x-3"
+            onClick={() => window.open("https://github.com/Billioma", "_blank")}
+            className="group flex items-center justify-center space-x-3 px-8 py-4 border border-emerald-500/50 text-emerald-500 font-bold rounded-sm hover:bg-emerald-500/10 transition-all duration-300"
           >
-            <Briefcase size={22} />
-            <span>View Portfolio</span>
-            <ExternalLink
-              size={18}
-              className="group-hover:rotate-45 transition-transform duration-300"
-            />
+            <Briefcase size={18} />
+            <span>VIEW_REPOS</span>
           </button>
         </div>
 
         <div
-          className="animate-bounce cursor-pointer"
+          className="cursor-pointer opacity-50 hover:opacity-100 transition-opacity flex flex-col items-center gap-2"
           onClick={() => scrollToSection("about")}
         >
-          <GlassCard className="inline-block p-3 rounded-full border-white/[0.1]">
-            <ChevronDown className="text-cyan-400" size={32} />
-          </GlassCard>
+          <span className="text-[10px] uppercase tracking-[0.3em]">
+            Scroll_To_Init
+          </span>
+          <ChevronDown className="text-emerald-500 animate-bounce" size={24} />
+        </div>
+
+        <div className="mt-12 text-cyan-400 text-3xl md:text-5xl font-semibold italic opacity-40">
+          {"}"};
         </div>
       </div>
     </section>

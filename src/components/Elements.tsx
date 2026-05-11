@@ -55,7 +55,7 @@ export const NavLink = ({ href, children, mobile = false }: any) => {
     >
       {children}
       <span
-        className={`absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 transition-all duration-500 group-hover:w-full ${
+        className={`absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-cyan-300 via-blue-400 to-purple-500 transition-all duration-500 group-hover:w-full ${
           activeSection === href ? "w-full" : ""
         }`}
       ></span>
@@ -65,13 +65,13 @@ export const NavLink = ({ href, children, mobile = false }: any) => {
 
 export const GlassCard = ({ children, className = "", hover = true }: any) => (
   <div
-    className={`backdrop-blur-xl bg-white/[0.02] border border-white/[0.05] rounded-3xl shadow-2xl ${
+    className={`backdrop-blur-xl bg-white/2 border border-white/5 rounded-3xl shadow-2xl ${
       hover
-        ? "hover:bg-white/[0.05] hover:border-white/[0.1] hover:shadow-cyan-500/5"
+        ? "hover:bg-white/5 hover:border-white/10 hover:shadow-cyan-500/5"
         : ""
     } transition-all duration-700 ${className}`}
   >
-    <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-cyan-500/[0.01] via-transparent to-purple-500/[0.01]"></div>
+    <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-cyan-500/1 via-transparent to-purple-500/1"></div>
     <div className="relative z-10">{children}</div>
   </div>
 );

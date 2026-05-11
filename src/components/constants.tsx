@@ -15,6 +15,7 @@ import {
   Briefcase,
   Shield,
   Laptop,
+  Link,
 } from "lucide-react";
 
 export const exp = [
@@ -161,59 +162,96 @@ export const exp = [
 
 export const recent = [
   {
-    title: "ParkinSpace",
-    description:
-      "Comprehensive parking management solution with customer, client, operator, and admin web applications featuring real-time reservations and payments.",
-    tech: ["React", "Chakra UI", "React Query"],
-    gradient: "from-cyan-400/20 to-blue-500/20",
-    borderColor: "border-cyan-400/20",
-    icon: "🅿️",
-    textColor: "text-cyan-300",
-    link: "https://parkinspace.ng/",
+    title: "AlliancePay",
+    description: "High-performance fintech ecosystem for digital payments...",
+    tech: ["Next JS", "Chakra UI", "React Query"],
+    links: {
+      website: "https://alliancepay.io/",
+    },
+    image: {
+      website: "/assets/ap.png",
+    },
+    category: ["website"],
   },
   {
-    title: "EZPark Managr",
-    description:
-      "Comprehensive admin and staff management applications for parking operations with role-based access control and reporting.",
-    tech: ["React", "Chakra UI", "React Query"],
-    gradient: "from-pink-400/20 to-red-500/20",
-    borderColor: "border-pink-400/20",
-    icon: "⚙️",
-    textColor: "text-pink-300",
+    title: "Transalliance Minerals",
+    description: "Premier industrial portal for mineral resource management...",
+    tech: ["Next JS", "Chakra UI", "React Query"],
+    links: {
+      website: "https://transallianceminerals.com/",
+    },
+    image: {
+      website: "/assets/tm.png",
+    },
+    category: ["website"],
   },
-
+  {
+    title: "ParkinSpace",
+    description: "Comprehensive parking management solution...",
+    tech: ["React", "Chakra UI", "React Query"],
+    links: {
+      "web-app": "https://app.parkinspace.ng/customer/auth/login",
+      website: "https://parkinspace.ng/",
+    },
+    image: {
+      website: "/assets/parkinspace.png",
+      "web-app": "/assets/parkinspace2.png",
+    },
+    category: ["web-app", "website"],
+  },
+  {
+    title: "NomadDoc",
+    description: "Specialized travel health and medical advisory portal...",
+    tech: ["Next JS", "Chakra UI", "React Query"],
+    links: {
+      "web-app": "https://nomaddoctravelhealth.com/auth/login",
+      website: "https://nomaddoctravelhealth.com/",
+    },
+    image: {
+      website: "/assets/nomad.png",
+      "web-app": "/assets/nomad2.png",
+    },
+    category: ["web-app", "website"],
+  },
+  {
+    title: "Nolt Finance",
+    description: "Modern investment and credit management platform...",
+    tech: ["Next JS", "TypeScript", "React Query"],
+    links: {
+      "web-app": "https://auth.noltfinance.com/auth/login",
+      website: "https://www.noltfinance.com/",
+    },
+    image: {
+      website: "/assets/nolt.png",
+      "web-app": "/assets/nolt2.png",
+    },
+    category: ["web-app", "website"],
+  },
   {
     title: "Zendwallet Personal",
-    description:
-      "Advanced cryptocurrency platform for individuals, enabling seamless deposits, withdrawals, coin swapping, and peer-to-peer fiat transactions. Manage over 20+ cryptocurrencies efficiently with a reliable and user-friendly interface.",
+    description: "Advanced cryptocurrency platform...",
     tech: ["React", "TypeScript", "Next JS", "React Query"],
-    gradient: "from-indigo-400/20 to-purple-600/20",
-    borderColor: "border-indigo-400/20",
-    icon: "₿",
-    textColor: "text-indigo-300",
-    link: "https://zendwallet.com/auth/login",
+    links: {
+      "web-app": "https://zendwallet.com/auth/login",
+      website: "https://zendwallet.com",
+    },
+    image: {
+      website: "/assets/zendp.png",
+      "web-app": "/assets/zendp2.png",
+    },
+    category: ["web-app", "website"],
   },
   {
     title: "Zendwallet Business",
-    description:
-      "Enterprise-grade crypto platform designed for businesses. Manage crypto transactions, teams, and directors efficiently, while optimizing workflows and driving growth. Seamless deposits, withdrawals, and coin swapping for smooth operations.",
+    description: "Enterprise-grade crypto platform...",
     tech: ["React", "TypeScript", "Next JS", "React Query"],
-    gradient: "from-indigo-400/20 to-purple-600/20",
-    borderColor: "border-indigo-400/20",
-    icon: "₿",
-    textColor: "text-indigo-300",
-    link: "https://business.zendwallet.com/login",
-  },
-  {
-    title: "BizFlex",
-    description:
-      "Business management platform for entrepreneurs with integrated payment solutions and comprehensive financial management tools.",
-    tech: ["React", "Chakra UI", "React Query"],
-    gradient: "from-yellow-400/20 to-orange-500/20",
-    borderColor: "border-yellow-400/20",
-    icon: "💼",
-    textColor: "text-yellow-300",
-    link: "https://www.bizflex.africa/",
+    links: {
+      "web-app": "https://business.zendwallet.com/login",
+    },
+    image: {
+      "web-app": "/assets/zendb.png",
+    },
+    category: ["web-app"],
   },
 ];
 
@@ -311,7 +349,7 @@ export const journeySections = [
   {
     title: "Professional Journey",
     description:
-      "I'm an experienced Frontend Developer with over 5 years of expertise in developing and maintaining dynamic, user-centric web applications. I specialize in React, TypeScript, and modern frontend technologies, with a proven track record in leading teams and delivering innovative solutions.",
+      "I'm an experienced Frontend Developer with over 7 years of expertise in developing and maintaining dynamic, user-centric web applications. I specialize in React, TypeScript, and modern frontend technologies, with a proven track record in leading teams and delivering innovative solutions.",
     Icon: Sparkles,
     titleColor: "text-cyan-300",
   },
@@ -334,9 +372,9 @@ export const contactItems = [
     iconColor: "text-cyan-400",
   },
   {
-    value: "+2347061755488",
-    href: "tel:+2347061755488",
-    Icon: Phone,
+    value: "LinkedIn",
+    href: "https://www.linkedin.com/in/omari-bilal/",
+    Icon: Link,
     hover: "hover:text-purple-300",
     gradient: "from-purple-500/20 to-purple-600/20",
     iconColor: "text-purple-400",
@@ -353,7 +391,7 @@ export const contactItems = [
 
 export const highlights = [
   {
-    value: "5+",
+    value: "7+",
     title: "Years Experience",
     Icon: Code,
     border: "border-cyan-500/[0.1]",
